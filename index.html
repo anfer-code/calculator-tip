@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+  <main>
+    <h2 class="main-title">SPLI <br> TTER</h2>
+    <div class="calculator-container">
+      <form class="form">
+        <div class="form__section">
+          <label for="amount" class="form__text">Bill</label>
+          <div class="input__container">
+            <input type="number" id="amount" class="input input--amount">
+            <span></span>
+          </div>
+        </div>
+        <div class="form__section">
+          <label class="form__text"> Select Tip %</label>
+          <div class="grid">
+            <button  disabled class="button grid-1" value="5">5%</button>
+            <button  disabled class="button grid-2" value="10">10%</button>
+            <button  disabled class="button grid-3" value="15">15%</button>
+            <button  disabled class="button grid-4" value="25">25%</button>
+            <button  disabled class="button grid-5" value="50">50%</button>
+            <input type="number" class="input input--custom" placeholder="Custom">
+          </div>
+        </div>
+        <div class="form__section">
+          <label for="persons" class="form__text">Numbers of People</label>
+          <div class="input__container">
+            <input type="number" id="persons" class="input input--persons">
+            <span></span>
+          </div>
+          
+        </div>
+      </form>
+      <div class="screen">
+        <div class="screen__section">
+          <div class="screen__text">
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </div><!-- screen__text -->
+          <p class="screen__result" id="result">$0.00</p>
+        </div><!-- screen__section -->
+        <div class="screen__section">
+          <div class="screen__text">
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </div><!-- screen__text -->
+          <p class="screen__result" id="result-2">$0.00</p>
+        </div><!-- screen__section -->
+        <div class="screen__section">
+          <button id="refresh" class="button button--refresh">RESET</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
