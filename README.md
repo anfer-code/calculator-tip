@@ -1,5 +1,5 @@
 # Frontend Mentor - Tip calculator app
-HOLA QUERIDO ANFER ! SOY DANTE EL HACKER
+
 ![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
