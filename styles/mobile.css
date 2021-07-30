@@ -33,6 +33,7 @@ main {
 
 .calculator-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     min-height: 500px;
     width: 100%;
@@ -137,6 +138,11 @@ main {
     outline: none;
     border-radius: 6px;
     font-weight: bold;
+}
+
+.button:hover {
+    background-color: red;
+    cursor: pointer;
 }
 
 /*Screen*/
