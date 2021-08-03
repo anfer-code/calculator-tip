@@ -186,3 +186,19 @@ main {
     width: 100%;
     color: var(--screen-color);
 }
+
+.buton-active {
+    background-color: var(--main-color);
+    transition: background-color ease-in-out 300ms;
+}
+
+.transform {
+    transform: scale(0.9);
+    transition: transform ease-in-out 300ms;
+
+}
+
+.amount-active {
+    border: 1px solid red;
+    background-color: rgb(243 138 138 / 19%);
+}
