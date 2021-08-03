@@ -33,9 +33,12 @@ main {
 
 .calculator-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    flex-direction: row;
     min-height: 500px;
-    width: 100%;
+    max-width: 800px;
+    width: 80%;
     padding: 25px;
     background-color: white;
     border-radius: 25px;
@@ -139,10 +142,17 @@ main {
     font-weight: bold;
 }
 
+.button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
 /*Screen*/
 
 .screen {
     background-color: var(--screen-color);
+    width: 45%;
+    margin: 0 auto ;
     border-radius: 20px ;
     min-height: 350px;
     display: flex;
@@ -185,20 +195,4 @@ main {
     background-color: var(--main-color);
     width: 100%;
     color: var(--screen-color);
-}
-
-.buton-active {
-    background-color: var(--main-color);
-    transition: background-color ease-in-out 300ms;
-}
-
-.transform {
-    transform: scale(0.9);
-    transition: transform ease-in-out 300ms;
-
-}
-
-.amount-active {
-    border: 1px solid red;
-    background-color: rgb(243 138 138 / 19%);
 }
